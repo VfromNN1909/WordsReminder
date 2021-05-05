@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/allWordsFragment">
+
+    <fragment
+        android:id="@+id/allWordsFragment"
+        android:name="ru.vlasoff.wordreminder.presentation.fragments.AllWordsFragment"
+        android:label="fragment_all_words"
+        tools:layout="@layout/fragment_all_words" >
+        <action
+            android:id="@+id/action_allWordsFragment_to_trainFragment"
+            app:destination="@id/trainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainFragment"
+        android:name="ru.vlasoff.wordreminder.presentation.fragments.TrainFragment"
+        android:label="fragment_train"
+        tools:layout="@layout/fragment_train" />
+</navigation>
